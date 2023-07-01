@@ -1,0 +1,10 @@
+.container {
+    padding: 1rem;
+    background-color: hsl(0, 0%, 80%);
+    width: 10rem;
+}
+
+.container img {
+    width: 10rem;
+    height: 10rem;
+}

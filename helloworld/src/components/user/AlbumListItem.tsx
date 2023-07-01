@@ -1,4 +1,5 @@
 import { Album } from "./UserView";
+import styles from '../../styles/user/AlbumListItem.module.css'
 
 type Props = {
     album: Album
@@ -6,7 +7,7 @@ type Props = {
 
 const AlbumListItem: React.FC<Props> = ({album}) => {
     return (
-        <div>
+        <div className={styles.container}>
             <p>{album.title}</p>
         </div>
     )

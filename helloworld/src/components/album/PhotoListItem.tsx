@@ -1,4 +1,5 @@
 import { Photo } from "./AlbumView";
+import styles from '../../styles/album/PhotoListItem.module.css'
 
 type Props = {
     photo: Photo
@@ -7,7 +8,7 @@ type Props = {
 const PhotoListItem: React.FC<Props> = ({photo}) => {
 
     return (
-        <div>
+        <div className={styles.container}>
             <img src={photo.url} />
             <p>{photo.title}</p>
         </div>
