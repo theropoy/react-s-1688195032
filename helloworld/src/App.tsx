@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { User } from './utils/types';
@@ -12,7 +12,7 @@ export const fetchUsers = () => {
 function App() {
 
   // stores the mapped user data
-  const [users, setUsers] = useState<User[]>([]);
+  const [users, setUsers] = React.useState<User[]>([]);
 
   //fetch users on load
   useEffect(() => {
