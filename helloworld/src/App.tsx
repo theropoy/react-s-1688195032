@@ -4,6 +4,10 @@ import './App.css';
 import { User } from './utils/types';
 import UserList from './components/home/UserList';
 
+export const fetchUsers = () => {
+  return fetch('https://jsonplaceholder.typicode.com/users')
+  .then(response => response.json());
+}
 
 function App() {
 
@@ -12,12 +16,11 @@ function App() {
 
   //fetch users on load
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/users')
-      .then(response => response.json())
-      .then(json => {
-        const userList: User[] = json.map((user: any) => ({id: user.id, name: user.name, username: user.username, address: user.address}));
-        setUsers(userList);
-      })
+    fetchUsers()
+    .then((json) => {
+      const userList: User[] = json.map((user: any) => ({id: user.id, name: user.name, username: user.username, address: user.address}));
+      setUsers(userList);
+    });
   }, [])
 
 
