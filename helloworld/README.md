@@ -10,6 +10,9 @@ user id, name, usernamen and the address. I know that there is more user data fr
 ### Task 2
 I created a few tests with the help of jest and the testing library for react. The testing library for react was used to get more control of react.
 
+### Task 3
+I tried to design the components in such a way that its going to scale nicely if further complexity needs to be added.
+React Router Dom handles my routing since I have decided against a SPA.
 
 
 ## Available Scripts
