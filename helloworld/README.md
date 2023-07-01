@@ -1,6 +1,13 @@
-# Getting Started with Create React App
+## My Tasks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Task 1
+I created a react project with create react app.
+Bellow are the commands to run and test the project.
+
+Because the task description only mentioned to list the user and address I understood it as listing
+user id, name, usernamen and the address. I know that there is more user data from the fetch, if needed the type and UserListItem.tsx can be modified to show more detailed user information.
+
+
 
 ## Available Scripts
 

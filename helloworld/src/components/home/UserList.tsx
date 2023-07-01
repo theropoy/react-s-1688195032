@@ -6,6 +6,7 @@ type Props = {
     users: User[]
 }
 
+// Lists all user items in home
 const UserList: React.FC<Props> = ({users}) => {
     return (
         <div className={styles.container}>

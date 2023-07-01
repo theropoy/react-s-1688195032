@@ -5,6 +5,7 @@ type Props = {
     user: User
 }
 
+// Is an item of the user list in home
 const UserListItem: React.FC<Props> = ({user}) => {
 
     return (

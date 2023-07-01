@@ -7,6 +7,7 @@ import UserList from './components/home/UserList';
 
 function App() {
 
+  // stores the mapped user data
   const [users, setUsers] = useState<User[]>([]);
 
   //fetch users on load
