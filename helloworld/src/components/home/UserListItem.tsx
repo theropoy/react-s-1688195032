@@ -16,7 +16,7 @@ const UserListItem: React.FC<Props> = ({user}) => {
             <ul>
                 <li className="useritem__street">{user.address.street}</li>
                 <li className="useritem__suite">{user.address.suite}</li>
-                <li className="useritem__city">{user.address.street}</li>
+                <li className="useritem__city">{user.address.city}</li>
                 <li className="useritem__zipcode">{user.address.zipcode}</li>
             </ul>
         </div>
