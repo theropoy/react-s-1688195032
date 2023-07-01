@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import PhotoList from "./PhotoList";
+import styles from '../../styles/user/UserView.module.css'
 
 export type Photo = {
     albumId: number,
@@ -39,7 +40,7 @@ const AlbumView = ({}) => {
     }, [])
 
     return (
-        <main>
+        <main className={styles.container}>
             <h1>{albumTitle}</h1>
             <PhotoList photos={photos}/>
         </main>

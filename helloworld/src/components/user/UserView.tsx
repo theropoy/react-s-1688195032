@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import AlbumList from "./AlbumList";
-import { json } from "body-parser";
+import styles from '../../styles/user/UserView.module.css'
 
 export type Album = {
     userId: number,
@@ -38,7 +38,7 @@ const UserView = ({}) => {
     }, [])
 
     return (
-        <main>
+        <main className={styles.container}>
             <h1>{user.name + ' - ' + user.username}</h1>
             <AlbumList albums={albums} />
         </main>
