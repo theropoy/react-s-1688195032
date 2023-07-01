@@ -7,6 +7,9 @@ Bellow are the commands to run and test the project.
 Because the task description only mentioned to list the user and address I understood it as listing
 user id, name, usernamen and the address. I know that there is more user data from the fetch, if needed the type and UserListItem.tsx can be modified to show more detailed user information.
 
+### Task 2
+I created a few tests with the help of jest and the testing library for react. The testing library for react was used to get more control of react.
+
 
 
 ## Available Scripts
