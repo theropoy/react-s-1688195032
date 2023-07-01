@@ -1,3 +1,4 @@
+import AlbumListItem from "./AlbumListItem";
 import { Album } from "./User";
 
 type Props = {
@@ -5,7 +6,9 @@ type Props = {
 }
 const AlbumList: React.FC<Props> = ({albums}) => {
     return (
-        <></>
+        <div>
+            {albums.map((album) => <AlbumListItem album={album}/>)}
+        </div>
     )
 };
 

@@ -7,7 +7,7 @@ type Props = {
 const AlbumListItem: React.FC<Props> = ({album}) => {
     return (
         <div>
-            <p>title</p>
+            <p>{album.title}</p>
         </div>
     )
 }

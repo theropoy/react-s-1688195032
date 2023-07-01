@@ -5,11 +5,11 @@ import AlbumList from "./AlbumList";
 export type Album = {
     userId: number,
     id: number,
-    title: 'string'
+    title: string
 };
 
-const fetchAlbums = () => {
-    return fetch('https://jsonplaceholder.typicode.com/users')
+const fetchAlbums = (userId: number) => {
+    return fetch(`https://jsonplaceholder.typicode.com/users/${userId}/albums`)
     .then(response => response.json());
 };
 
@@ -19,9 +19,9 @@ const User = ({}) => {
     const [albums, setAlbums] = useState<Album[]>([]);
 
     useEffect(() => {
-        fetchAlbums()
+        fetchAlbums(Number(id))
         .then((json) => {
-            setAlbums(albums);
+            setAlbums(json);
         });
     }, [])
 
