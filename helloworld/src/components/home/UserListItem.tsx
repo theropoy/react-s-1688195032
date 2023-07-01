@@ -1,4 +1,5 @@
 import { User } from "../../utils/types"
+import styles from '../../styles/home/UserListItem.module.css'
 
 type Props = {
     user: User
@@ -7,7 +8,7 @@ type Props = {
 const UserListItem: React.FC<Props> = ({user}) => {
 
     return (
-        <div >
+        <div className={styles.container}>
             <p>{user.id}</p>
             <p>{user.name}</p>
             <p>{user.username}</p>

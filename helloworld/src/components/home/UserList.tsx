@@ -1,5 +1,6 @@
 import { User } from "../../utils/types";
 import UserListItem from "./UserListItem";
+import styles from '../../styles/home/UserList.module.css'
 
 type Props = {
     users: User[]
@@ -7,7 +8,7 @@ type Props = {
 
 const UserList: React.FC<Props> = ({users}) => {
     return (
-        <div>
+        <div className={styles.container}>
             { users.map(user => <UserListItem key={user.id} user={user}/>)}
         </div>
     )
