@@ -1,5 +1,5 @@
 import { render, waitFor } from "@testing-library/react";
-import UserList from "../../components/home/UserList";
+import UserList from "./UserList";
 import { User } from "../../utils/types";
 
 test('Test if all users in list rendered', async () => {
