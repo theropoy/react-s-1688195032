@@ -14,7 +14,7 @@ function App() {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(json => {
-        const userList: User[] = json.map((user: any) => ({id: user.id, name: user.id, username: user.username, address: user.address}));
+        const userList: User[] = json.map((user: any) => ({id: user.id, name: user.name, username: user.username, address: user.address}));
         setUsers(userList);
       })
   }, [])
