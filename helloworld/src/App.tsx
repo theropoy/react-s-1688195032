@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { User } from './utils/types';
+import UserList from './components/home/UserList';
 
-type User = {
-  id: number,
-  name: string,
-  username: string,
-  address: {street: string, suite: string, city: string, zipcode: string}
-}
 
 function App() {
 
@@ -26,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-     
+      <UserList users={users}/>
     </div>
   );
 }
