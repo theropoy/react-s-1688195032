@@ -7,7 +7,7 @@ type Props = {
 const AlbumList: React.FC<Props> = ({albums}) => {
     return (
         <div>
-            {albums.map((album) => <AlbumListItem album={album}/>)}
+            {albums.map((album) => <AlbumListItem key={album.id} album={album}/>)}
         </div>
     )
 };
