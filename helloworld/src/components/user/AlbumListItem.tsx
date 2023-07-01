@@ -8,10 +8,9 @@ type Props = {
 
 const AlbumListItem: React.FC<Props> = ({album}) => {
     return (
-        <Link to={'/album/' + album.id}>
-        <div className={styles.container}>
+        <Link className={styles.container} to={'/album/' + album.id}>
+            <div className={styles.imagePlaceholder}></div>
             <p>{album.title}</p>
-        </div>
         </Link>
     )
 }

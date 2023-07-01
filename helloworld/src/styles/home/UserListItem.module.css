@@ -1,5 +1,36 @@
 .container {
+    padding: 1rem;
     display: flex;
     gap: 1rem;
     align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    width: 40rem;
+
+    background-color: rgb(233, 233, 233);
+    border-radius: 1rem;
+}
+
+.container:hover {
+    background-color: hsl(0, 0%, 88%);
+}
+
+@media (max-width: 40.5rem) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        border-radius: 0;
+    }
+
+    .container ul {
+        margin-top: 1rem;
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        list-style: none;
+    }
 }
