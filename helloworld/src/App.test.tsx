@@ -9,3 +9,9 @@ test('Test if fetched user data is the right one', async () => {
   .then(response => response.json());
   expect(data).toEqual(testData);
 });
+
+test('User list gets rendered', () => {
+  const {container} = render(<App />);
+  const userList = container.getElementsByClassName('userlist');
+  expect(userList).not.toEqual(null);
+});
