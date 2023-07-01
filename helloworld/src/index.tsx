@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import App from "./App";
 import UserView from './components/user/UserView';
+import AlbumView from './components/album/AlbumView';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -15,6 +16,7 @@ root.render(
       <Routes>
         <Route path='/' element={<App />}/>
         <Route path='/user/:id' element={<UserView />}/>
+        <Route path='/album/:id' element={<AlbumView />}/>
       </Routes>
     </Router>
   </React.StrictMode>
