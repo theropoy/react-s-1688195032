@@ -1,5 +1,5 @@
 import AlbumListItem from "./AlbumListItem";
-import { Album } from "./User";
+import { Album } from "./UserView";
 
 type Props = {
     albums: Album[]

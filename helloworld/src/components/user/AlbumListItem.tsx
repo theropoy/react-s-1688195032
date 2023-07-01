@@ -1,4 +1,4 @@
-import { Album } from "./User";
+import { Album } from "./UserView";
 
 type Props = {
     album: Album

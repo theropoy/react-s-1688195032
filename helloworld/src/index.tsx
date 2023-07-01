@@ -4,7 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import App from "./App";
-import User from './components/user/User';
+import UserView from './components/user/UserView';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -14,7 +14,7 @@ root.render(
     <Router>
       <Routes>
         <Route path='/' element={<App />}/>
-        <Route path='/user/:id' element={<User />}/>
+        <Route path='/user/:id' element={<UserView />}/>
       </Routes>
     </Router>
   </React.StrictMode>

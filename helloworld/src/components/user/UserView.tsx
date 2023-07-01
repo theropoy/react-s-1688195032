@@ -13,7 +13,7 @@ const fetchAlbums = (userId: number) => {
     .then(response => response.json());
 };
 
-const User = ({}) => {
+const UserView = ({}) => {
     const {id} = useParams();
 
     const [albums, setAlbums] = useState<Album[]>([]);
@@ -32,4 +32,4 @@ const User = ({}) => {
     )
 }
 
-export default User;
+export default UserView;
